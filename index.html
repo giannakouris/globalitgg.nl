@@ -9,13 +9,13 @@
     body {
       margin: 0;
       font-family: Arial, sans-serif;
-      background-color: #ffffff;
-      color: #333333;
+      background-color: #ffffff; /* wit */
+      color: #333333; /* donkergrijs */
     }
 
     /* Header */
     header {
-      background-color: #0052cc;
+      background-color: #0052cc; /* blauw donker */
       color: #ffffff;
       padding: 20px;
       text-align: center;
@@ -29,11 +29,140 @@
     nav {
       display: flex;
       justify-content: center;
-      background-color: #0073e6;
+      background-color: #0073e6; /* blauw licht */
       padding: 10px 0;
     }
 
     nav a {
       color: #ffffff;
       text-decoration: none;
-      margin: 0 15
+      margin: 0 15px;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    /* Secties */
+    section {
+      padding: 40px 20px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .services, .pricing {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      border: 1px solid #cccccc;
+      border-radius: 10px;
+      padding: 20px;
+      background-color: #f9f9f9; /* lichtgrijs */
+      transition: transform 0.2s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+
+    .card h3 {
+      color: #0052cc; /* blauw donker */
+      margin-top: 0;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #0052cc; /* blauw donker */
+      color: #ffffff;
+      text-decoration: none;
+      border-radius: 5px;
+      margin-top: 10px;
+    }
+
+    .btn:hover {
+      background-color: #003d99; /* donkerder blauw bij hover */
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #0073e6; /* blauw licht */
+      color: #ffffff;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>ITGG</h1>
+  <p>Professionele IT Consultancy & Oplossingen</p>
+</header>
+
+<nav>
+  <a href="#services">Diensten</a>
+  <a href="#pricing">Prijzen</a>
+  <a href="#account">Klantenaccount</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<section id="services">
+  <h2>Diensten</h2>
+  <div class="services">
+    <div class="card">
+      <h3>IT Consultancy</h3>
+      <p>Advies en oplossingen voor infrastructuur, migraties en IT-beheer in Pharma en andere sectoren.</p>
+    </div>
+    <div class="card">
+      <h3>Projectcoördinatie</h3>
+      <p>Begeleiding van migratieprojecten, implementaties en service management voor klanten wereldwijd.</p>
+    </div>
+    <div class="card">
+      <h3>24/7 Support</h3>
+      <p>Remote ondersteuning voor Windows, macOS en Android devices, met snelle respons en deskundige oplossingen.</p>
+    </div>
+  </div>
+</section>
+
+<section id="pricing">
+  <h2>Prijzen</h2>
+  <div class="pricing">
+    <div class="card">
+      <h3>Consultancy</h3>
+      <p>€60 / uur</p>
+    </div>
+    <div class="card">
+      <h3>Projectcoördinatie</h3>
+      <p>€80 / uur</p>
+    </div>
+    <div class="card">
+      <h3>Remote Support</h3>
+      <p>€50 / uur</p>
+    </div>
+  </div>
+</section>
+
+<section id="account">
+  <h2>Klantenaccount</h2>
+  <div class="card">
+    <p>Log in om je projecten, facturen en support tickets te beheren.</p>
+    <a href="#" class="btn">Inloggen</a>
+  </div>
+</section>
+
+<section id="contact">
+  <h2>Contact</h2>
+  <p>Neem contact op via info@itgg.nl of bel +31 6 12345678</p>
+</section>
+
+<footer>
+  &copy; 2025 ITGG - Alle rechten voorbehouden
+</footer>
+
+</body>
+</html>
