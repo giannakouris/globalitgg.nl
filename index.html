@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ITGG - IT Consultancy</title>
   <style>
+    /* Algemene styling */
     body {
       margin: 0;
       font-family: Arial, sans-serif;
@@ -12,67 +13,65 @@
       color: #333333;
       scroll-behavior: smooth;
     }
+
+    /* Header */
     header {
-      background-color: #0052cc;
-      color: #ffffff;
-      padding: 40px 20px;
+      background: linear-gradient(90deg, #0052cc, #0073e6);
+      color: #fff;
       text-align: center;
+      padding: 80px 20px;
     }
-    header h1 { margin: 0; font-size: 2.5rem; }
-    header p { font-size: 1.2rem; }
+
+    header h1 {
+      margin: 0;
+      font-size: 3rem;
+    }
+
+    header p {
+      font-size: 1.3rem;
+      margin-top: 10px;
+    }
+
+    /* Navigatie */
     nav {
       display: flex;
       justify-content: center;
-      background-color: #0073e6;
-      padding: 10px 0;
+      background-color: #0052cc;
       position: sticky;
       top: 0;
-      z-index: 1000;
+      z-index: 100;
     }
+
     nav a {
       color: #ffffff;
       text-decoration: none;
-      margin: 0 20px;
+      margin: 0 25px;
       font-weight: bold;
-      font-size: 1rem;
+      padding: 15px 0;
+      display: inline-block;
+      transition: 0.3s;
     }
-    nav a:hover { text-decoration: underline; }
-    section { padding: 60px 20px; max-width: 1200px; margin: auto; }
+
+    nav a:hover {
+      background-color: #003d99;
+      border-radius: 5px;
+    }
+
+    /* Secties */
+    section {
+      padding: 80px 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    section h2 {
+      color: #0052cc;
+      text-align: center;
+      margin-bottom: 50px;
+      font-size: 2rem;
+    }
+
+    /* Kaarten voor services */
     .card-container {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 20px;
-    }
-    .card {
-      background-color: #f9f9f9;
-      border-radius: 10px;
-      padding: 20px;
-      border: 1px solid #ccc;
-      transition: transform 0.2s;
-    }
-    .card:hover { transform: translateY(-5px); box-shadow: 0 5px 15px rgba(0,0,0,0.1); }
-    .card h3 { color: #0052cc; margin-top: 0; }
-    .btn {
-      display: inline-block;
-      padding: 10px 20px;
-      background-color: #0052cc;
-      color: #fff;
-      text-decoration: none;
-      border-radius: 5px;
-      margin-top: 10px;
-    }
-    .btn:hover { background-color: #003d99; }
-    footer {
-      text-align: center;
-      padding: 20px;
-      background-color: #0073e6;
-      color: #fff;
-    }
-  </style>
-</head>
-<body>
-
-<!-- Menu -->
-<nav>
-  <a href="#welcome">Welcome</a>
-  <a href="#ser
+      grid-template-columns: repeat(auto-fit
