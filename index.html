@@ -1,33 +1,62 @@
 <!DOCTYPE html>
 <html lang="nl">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>ITGG Web Solutions</title>
-<style>
-  /* Algemene styling */
-  * { box-sizing: border-box; margin: 0; padding: 0; }
-  body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: #fff; color: #333; scroll-behavior: smooth; }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ITGG - IT Consultancy & Solutions</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="diensten.html">Diensten</a></li>
+        <li><a href="projecten.html">Projecten</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <h1>ITGG</h1>
+    <p>Uw partner in IT Consultancy, Infrastructuur en Technische Oplossingen</p>
+  </header>
 
-  /* Header */
-  header { background: linear-gradient(90deg, #0052cc, #0073e6); color: #fff; text-align: center; padding: 80px 20px; }
-  header h1 { font-size: 3rem; margin-bottom: 10px; }
-  header p { font-size: 1.3rem; }
+  <main>
+    <section id="intro">
+      <h2>Welkom bij ITGG</h2>
+      <p>Wij bieden professionele IT-oplossingen, van infrastructuur en systeembeheer tot projectcoördinatie en cloud-integratie. Ontdek hoe wij uw bedrijf kunnen ondersteunen.</p>
+    </section>
 
-  /* Navigatie */
-  nav { display: flex; justify-content: center; background-color: #0052cc; position: sticky; top: 0; z-index: 1000; }
-  nav a { color: #fff; text-decoration: none; margin: 0 25px; font-weight: bold; padding: 15px 0; display: inline-block; transition: 0.3s; }
-  nav a:hover { background-color: #003d99; border-radius: 5px; }
+    <section id="diensten">
+      <h2>Onze Diensten</h2>
+      <div class="service-grid">
+        <div class="service">
+          <h3>IT Consultancy</h3>
+          <p>Expert advies en ondersteuning voor IT-projecten en systeemoptimalisatie.</p>
+        </div>
+        <div class="service">
+          <h3>Infrastructuur & Netwerk</h3>
+          <p>Beheer en optimalisatie van servers, netwerken en cloud-oplossingen.</p>
+        </div>
+        <div class="service">
+          <h3>Projectcoördinatie</h3>
+          <p>Leiding en coördinatie van migraties, implementaties en IT-projecten.</p>
+        </div>
+        <div class="service">
+          <h3>Technische Support</h3>
+          <p>Remote en on-site support, troubleshooting en incident management.</p>
+        </div>
+      </div>
+    </section>
 
-  /* Secties */
-  section { padding: 80px 20px; max-width: 1200px; margin: auto; }
-  section h2 { color: #0052cc; text-align: center; margin-bottom: 50px; font-size: 2rem; }
+    <section id="cta">
+      <h2>Neem Contact Op</h2>
+      <p>Wilt u weten hoe ITGG uw organisatie kan helpen? Neem contact met ons op voor een vrijblijvend gesprek.</p>
+      <a href="contact.html" class="btn">Contact opnemen</a>
+    </section>
+  </main>
 
-  /* Kaarten */
-  .card-container { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; }
-  .card { background: #f9f9f9; padding: 25px; border-radius: 15px; border: 1px solid #ccc; text-align: center; transition: transform 0.3s, box-shadow 0.3s; }
-  .card:hover { transform: translateY(-8px); box-shadow: 0 10px 20px rgba(0,0,0,0.15); }
-  .card h3 { color: #0052cc; margin-top: 0; margin-bottom: 15px; }
-  .card img { width: 100%; border-radius: 10px; margin-bottom: 15px; }
-
-  /* Knoppen */
+  <footer>
+    <p>&copy; 2025 ITGG | Alle rechten voorbehouden</p>
+  </footer>
+</body>
+</html>
