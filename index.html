@@ -1,59 +1,33 @@
 <!DOCTYPE html>
 <html lang="nl">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>AutoExperts - Uw Autopartner</title>
-  <style>
-    /* Algemene styling */
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-    body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #ffffff;
-      color: #333;
-      scroll-behavior: smooth;
-    }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ITGG Web Solutions</title>
+<style>
+  /* Algemene styling */
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: #fff; color: #333; scroll-behavior: smooth; }
 
-    /* Header */
-    header {
-      background: linear-gradient(90deg, #0052cc, #0073e6);
-      color: #fff;
-      text-align: center;
-      padding: 80px 20px;
-    }
-    header h1 { font-size: 3rem; margin-bottom: 10px; }
-    header p { font-size: 1.3rem; }
+  /* Header */
+  header { background: linear-gradient(90deg, #0052cc, #0073e6); color: #fff; text-align: center; padding: 80px 20px; }
+  header h1 { font-size: 3rem; margin-bottom: 10px; }
+  header p { font-size: 1.3rem; }
 
-    /* Navigatie */
-    nav {
-      display: flex;
-      justify-content: center;
-      background-color: #0052cc;
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-    }
-    nav a {
-      color: #fff;
-      text-decoration: none;
-      margin: 0 25px;
-      font-weight: bold;
-      padding: 15px 0;
-      display: inline-block;
-      transition: 0.3s;
-    }
-    nav a:hover { background-color: #003d99; border-radius: 5px; }
+  /* Navigatie */
+  nav { display: flex; justify-content: center; background-color: #0052cc; position: sticky; top: 0; z-index: 1000; }
+  nav a { color: #fff; text-decoration: none; margin: 0 25px; font-weight: bold; padding: 15px 0; display: inline-block; transition: 0.3s; }
+  nav a:hover { background-color: #003d99; border-radius: 5px; }
 
-    /* Secties */
-    section { padding: 80px 20px; max-width: 1200px; margin: auto; }
-    section h2 { color: #0052cc; text-align: center; margin-bottom: 50px; font-size: 2rem; }
+  /* Secties */
+  section { padding: 80px 20px; max-width: 1200px; margin: auto; }
+  section h2 { color: #0052cc; text-align: center; margin-bottom: 50px; font-size: 2rem; }
 
-    /* Kaarten / Auto’s & Diensten */
-    .card-container {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 30px;
-    }
-    .card {
-      background-color: #f9f9f9;
-      padding: 25px;
+  /* Kaarten */
+  .card-container { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; }
+  .card { background: #f9f9f9; padding: 25px; border-radius: 15px; border: 1px solid #ccc; text-align: center; transition: transform 0.3s, box-shadow 0.3s; }
+  .card:hover { transform: translateY(-8px); box-shadow: 0 10px 20px rgba(0,0,0,0.15); }
+  .card h3 { color: #0052cc; margin-top: 0; margin-bottom: 15px; }
+  .card img { width: 100%; border-radius: 10px; margin-bottom: 15px; }
+
+  /* Knoppen */
