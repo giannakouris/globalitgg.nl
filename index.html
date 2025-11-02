@@ -3,14 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ITGG - IT Consultancy</title>
+  <title>AutoExperts - Uw Autopartner</title>
   <style>
     /* Algemene styling */
+    * { box-sizing: border-box; margin: 0; padding: 0; }
     body {
-      margin: 0;
-      font-family: Arial, sans-serif;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       background-color: #ffffff;
-      color: #333333;
+      color: #333;
       scroll-behavior: smooth;
     }
 
@@ -21,16 +21,8 @@
       text-align: center;
       padding: 80px 20px;
     }
-
-    header h1 {
-      margin: 0;
-      font-size: 3rem;
-    }
-
-    header p {
-      font-size: 1.3rem;
-      margin-top: 10px;
-    }
+    header h1 { font-size: 3rem; margin-bottom: 10px; }
+    header p { font-size: 1.3rem; }
 
     /* Navigatie */
     nav {
@@ -39,3 +31,29 @@
       background-color: #0052cc;
       position: sticky;
       top: 0;
+      z-index: 1000;
+    }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 25px;
+      font-weight: bold;
+      padding: 15px 0;
+      display: inline-block;
+      transition: 0.3s;
+    }
+    nav a:hover { background-color: #003d99; border-radius: 5px; }
+
+    /* Secties */
+    section { padding: 80px 20px; max-width: 1200px; margin: auto; }
+    section h2 { color: #0052cc; text-align: center; margin-bottom: 50px; font-size: 2rem; }
+
+    /* Kaarten / Auto’s & Diensten */
+    .card-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+    }
+    .card {
+      background-color: #f9f9f9;
+      padding: 25px;
